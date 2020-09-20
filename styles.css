@@ -12,6 +12,9 @@
     .arrowDiv span {
         font-size: 30px;
     }
+    .nameContainer {
+        font-size: 12px;
+    }
 }
 @media only screen and (max-width: 1519px) {
     .bottom {
@@ -26,6 +29,9 @@
     }
     .arrowDiv span {
         font-size: 20px;
+    }
+    .nameContainer {
+        font-size: 8px;
     }
 }
 
@@ -45,6 +51,9 @@ html {
 
 .top {
     height: 75px;
+    position: absolute;
+    top: -20;
+    left: 20;
 }
 
 .graph {
@@ -295,4 +304,11 @@ html {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.nameContainer {
+    position: absolute;
+    bottom: 5;
+    left: 50%;
+    transform: translate(-50%);
 }
