@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- <div class="top">
+                <h1>SMOKELOOK</h1>
+            </div> -->
+            <div id="map"></div>
+            <!-- <div id="placeholder"></div> -->
+
+            <div class="graph">
+                <div class="graphShade" id="shade1">
+                    <span class="qualityLabel">1-11</span>
+                </div>
+                <div class="graphShade" id="shade2">
+                    <span class="qualityLabel">12-34</span>
+                </div>
+                <div class="graphShade" id="shade3">
+                    <span class="qualityLabel">35-54</span>
+                </div>
+                <div class="graphShade" id="shade4">
+                    <span class="qualityLabel">55-149</span>
+                </div>
+                <div class="graphShade" id="shade5">
+                    <span class="qualityLabel">150-249</span>
+                </div>
+                <div class="graphShade" id="shade6">
+                    <span class="qualityLabel">250-349</span>
+                </div>
+                <div class="graphShade" id="shade7">
+                    <span class="qualityLabel">350-499</span>
+                </div>
+                <div class="graphShade" id="shade8">
+                    <span class="qualityLabel">500+</span>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="panel">
+                    <div class="dayDiv">
+                        <div class="times">
+                            <button class="timeButton">12am</button>
+                            <button class="timeButton">6am</button>
+                            <button class="timeButton">12pm</button>
+                            <button class="timeButton">6pm</button>
+                        </div>
+                        <div class="day">
+                            <h3>Wed Sept 15</h3>
+                        </div>
+                    </div>
+                    <div class="dayDiv">
+                        <div class="times">
+                            <button class="timeButton">12am</button>
+                            <button class="timeButton">6am</button>
+                            <button class="timeButton">12pm</button>
+                            <button class="timeButton">6pm</button>
+                        </div>
+                        <div class="day">
+                            <h3>Wed Sept 15</h3>
+                        </div>
+                    </div>
+                    <div class="dayDiv">
+                        <div class="times">
+                            <button class="timeButton">12am</button>
+                            <button class="timeButton">6am</button>
+                            <button class="timeButton">12pm</button>
+                            <button class="timeButton">6pm</button>
+                        </div>
+                        <div class="day">
+                            <h3>Wed Sept 15</h3>
+                        </div>
+                    </div>
+                    <div class="dayDiv">
+                        <div class="times">
+                            <button class="timeButton">12am</button>
+                            <button class="timeButton">6am</button>
+                            <button class="timeButton">12pm</button>
+                            <button class="timeButton">6pm</button>
+                        </div>
+                        <div class="day">
+                            <h3>Wed Sept 15</h3>
+                        </div>
+                    </div>
+                    <div class="dayDiv">
+                        <div class="times">
+                            <button class="timeButton">12am</button>
+                            <button class="timeButton">6am</button>
+                            <button class="timeButton">12pm</button>
+                            <button class="timeButton">6pm</button>
+                        </div>
+                        <div class="day">
+                            <h3>Wed Sept 15</h3>
+                        </div>
+                    </div>
+                    <div class="dayDiv">
+                        <div class="times">
+                            <button class="timeButton">12am</button>
+                            <button class="timeButton">6am</button>
+                            <button class="timeButton">12pm</button>
+                            <button class="timeButton">6pm</button>
+                        </div>
+                        <div class="day">
+                            <h3>Wed Sept 15</h3>
+                        </div>
+                    </div>
+                    <div class="dayDiv">
+                        <div class="times">
+                            <button class="timeButton">12am</button>
+                            <button class="timeButton">6am</button>
+                            <button class="timeButton">12pm</button>
+                            <button class="timeButton">6pm</button>
+                        </div>
+                        <div class="day">
+                            <h3>Wed Sept 15</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="forwardback">
+                        <div class="arrowDiv back" id="back"><span>&#8592;</span></div>
+                        <div class="arrowDiv forward" id="forward"><span>&#8594;</span></div>
+                    </div>
+                    <div class="animation">
+                        <div class="animationTop">
+                            <div class="playDiv" id="play">
+                                <span class="playSpan">&#9654;</span>
+                            </div>
+                            <div class="playDiv" id="stop">
+                                <span class="stopSpan">&#9632;</span>
+                            </div>
+                        </div>
+                        <div class="animationBottom">
+                            <div class="speedLeft">
+                                <span id="speedOutput">5x</span>
+                            </div>
+                            <div class="speedRight">
+                                <input
+                                    type="range"
+                                    min=".5"
+                                    max="5"
+                                    value="1"
+                                    step=".5"
+                                    id="speedInput"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <img
+                src="https://haze.airfire.org/bluesky-daily/output/standard/GFS-0.15deg/2020091912/combined/graphics/three_hour/1GreyColorBar/three_hour_202009200900.png"
+            /> -->
+        </div>
+        <script src="script.js"></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+            defer
+        ></script>
+    </body>
+</html>

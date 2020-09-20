@@ -1,0 +1,298 @@
+@media only screen and (min-width: 1520px) {
+    .bottom {
+        width: 1500px;
+        height: 75px;
+    }
+    .day h3 {
+        font-size: 18px;
+    }
+    .timeButton {
+        font-size: 13px;
+    }
+    .arrowDiv span {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 1519px) {
+    .bottom {
+        width: 1000px;
+        height: 50px;
+    }
+    .day h3 {
+        font-size: 14px;
+    }
+    .timeButton {
+        font-size: 10px;
+    }
+    .arrowDiv span {
+        font-size: 20px;
+    }
+}
+
+html {
+    background: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "Cairo", sans-serif;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    background: none;
+}
+
+.top {
+    height: 75px;
+}
+
+.graph {
+    position: absolute;
+    top: 20;
+    right: 20;
+    width: 700px;
+    height: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+.graphShade {
+    height: 100%;
+    width: 12.5%;
+    position: relative;
+    opacity: 0.8;
+}
+.qualityLabel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    color: white;
+    opacity: 1;
+}
+#shade1 {
+    background: #c8c8c8;
+}
+#shade2 {
+    background: #afafaf;
+}
+#shade3 {
+    background: #969696;
+}
+#shade4 {
+    background: #7d7d7d;
+}
+#shade5 {
+    background: #646464;
+}
+#shade6 {
+    background: #4b4b4b;
+}
+#shade7 {
+    background: #323232;
+}
+#shade8 {
+    background: #191919;
+}
+
+#map {
+    /* width: 1500px; */
+    width: 100%;
+    height: 100%;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+    color: black;
+    height: 100%;
+    width: 89%;
+    /* border: 1px dotted black; */
+}
+
+.dayDiv {
+    /* border: 1px dotted green; */
+    width: 14.2%;
+    height: 100%;
+    /* border-right: 3px solid rgba(255, 255, 255, 0.5); */
+    /* border-bottom: 3px solid rgba(255, 255, 255, 0.5); */
+}
+
+.day {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* border: 1px dotted pink; */
+}
+
+.day h3 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.times {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeButton {
+    height: 100%;
+    width: 25%;
+    border: none;
+    background: none;
+    font-family: "Cairo", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeButton:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+.timeButton:focus {
+    outline: none;
+}
+.timeButton.active {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.controls {
+    width: 10%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forwardback {
+    width: 30%;
+    height: 100%;
+}
+.arrowDiv {
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.arrowDiv.inactive {
+    opacity: 0.2;
+}
+.arrowDiv.inactive:hover {
+    cursor: auto;
+    background: rgba(255, 255, 255, 0.4);
+}
+.arrowDiv.back {
+    border-top-left-radius: 10px;
+}
+.arrowDiv.forward {
+    border-bottom-left-radius: 10px;
+}
+.arrowDiv:hover {
+    background: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+.arrowDiv span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animation {
+    width: 70%;
+    height: 100%;
+    border-left: 3px solid rgba(255, 255, 255, 0.8);
+}
+.animationTop {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.playDiv {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+.playDiv.inactive {
+    opacity: 0.2;
+}
+.playDiv.inactive:hover {
+    cursor: auto;
+    background: rgba(255, 255, 255, 0.4);
+}
+#stop {
+    border-top-right-radius: 10px;
+}
+.playDiv:hover {
+    background: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+.playDiv span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#stop span {
+    top: 43%;
+    left: 50%;
+}
+.playDiv span.playSpan {
+    font-size: 30px;
+}
+.playDiv span.stopSpan {
+    font-size: 70px;
+}
+.animationBottom {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    /* border-top: 3px solid rgba(255, 255, 255, 0.8); */
+}
+.speedLeft {
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+#speedOutput {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+}
+.speedRight {
+    width: 80%;
+    height: 100%;
+    position: relative;
+}
+#speedInput {
+    width: 90%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
