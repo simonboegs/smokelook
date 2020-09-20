@@ -15,6 +15,12 @@
     .nameContainer {
         font-size: 12px;
     }
+    .playDiv span.playSpan {
+        font-size: 30px;
+    }
+    .playDiv span.stopSpan {
+        font-size: 70px;
+    }
 }
 @media only screen and (max-width: 1519px) {
     .bottom {
@@ -32,6 +38,12 @@
     }
     .nameContainer {
         font-size: 8px;
+    }
+    .playDiv span.playSpan {
+        font-size: 20px;
+    }
+    .playDiv span.stopSpan {
+        font-size: 50px;
     }
 }
 
@@ -267,12 +279,6 @@ html {
 #stop span {
     top: 43%;
     left: 50%;
-}
-.playDiv span.playSpan {
-    font-size: 30px;
-}
-.playDiv span.stopSpan {
-    font-size: 70px;
 }
 .animationBottom {
     width: 100%;
