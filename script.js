@@ -1,3 +1,5 @@
+const recent = "2020092100";
+
 slider = document.getElementById("speedInput");
 output = document.getElementById("speedOutput");
 output.innerHTML = slider.value;
@@ -345,7 +347,6 @@ async function createOverlays(map, t) {
         west: -170.0,
     };
     var cont = true;
-    var recent = "2020091912";
     var base =
         "https://haze.airfire.org/bluesky-daily/output/standard/GFS-0.15deg/" +
         recent +
