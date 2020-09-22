@@ -5,6 +5,8 @@
             rel="stylesheet"
         />
         <link href="styles.css" rel="stylesheet" />
+        <title>SMOKELOOK</title>
+        <meta name="description" content="7-day hourly smoke forecast for North America" />
     </head>
     <body>
         <div class="container">
@@ -12,30 +14,35 @@
             <div class="top">
                 <h1>SMOKELOOK.COM</h1>
             </div>
-            <div class="graph">
-                <div class="graphShade" id="shade1">
-                    <span class="qualityLabel">1-11</span>
+            <div class="graphContainer">
+                <div class="graph">
+                    <div class="graphShade" id="shade1">
+                        <span class="qualityLabel">1-11</span>
+                    </div>
+                    <div class="graphShade" id="shade2">
+                        <span class="qualityLabel">12-34</span>
+                    </div>
+                    <div class="graphShade" id="shade3">
+                        <span class="qualityLabel">35-54</span>
+                    </div>
+                    <div class="graphShade" id="shade4">
+                        <span class="qualityLabel">55-149</span>
+                    </div>
+                    <div class="graphShade" id="shade5">
+                        <span class="qualityLabel">150-249</span>
+                    </div>
+                    <div class="graphShade" id="shade6">
+                        <span class="qualityLabel">250-349</span>
+                    </div>
+                    <div class="graphShade" id="shade7">
+                        <span class="qualityLabel">350-499</span>
+                    </div>
+                    <div class="graphShade" id="shade8">
+                        <span class="qualityLabel">500+</span>
+                    </div>
                 </div>
-                <div class="graphShade" id="shade2">
-                    <span class="qualityLabel">12-34</span>
-                </div>
-                <div class="graphShade" id="shade3">
-                    <span class="qualityLabel">35-54</span>
-                </div>
-                <div class="graphShade" id="shade4">
-                    <span class="qualityLabel">55-149</span>
-                </div>
-                <div class="graphShade" id="shade5">
-                    <span class="qualityLabel">150-249</span>
-                </div>
-                <div class="graphShade" id="shade6">
-                    <span class="qualityLabel">250-349</span>
-                </div>
-                <div class="graphShade" id="shade7">
-                    <span class="qualityLabel">350-499</span>
-                </div>
-                <div class="graphShade" id="shade8">
-                    <span class="qualityLabel">500+</span>
+                <div class="infoButton">
+                    <span id="questionMark">?</span>
                 </div>
             </div>
 
