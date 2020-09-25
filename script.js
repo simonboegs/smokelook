@@ -1,4 +1,4 @@
-const recent = "2020092300";
+const recent = "2020092412";
 
 slider = document.getElementById("speedInput");
 output = document.getElementById("speedOutput");
@@ -66,7 +66,7 @@ class DateTime {
                 this.hours = 23;
                 this.day -= 1;
             }
-            if (this.day == -1) {
+            if (this.day == 0) {
                 this.month -= 1;
                 if (this.month == 9 || this.month == 5 || this.month == 11) {
                     this.day = 30;
@@ -76,7 +76,7 @@ class DateTime {
                     this.day = 31;
                 }
             }
-            if (this.month == -1) {
+            if (this.month == 0) {
                 this.year -= 1;
                 this.month = 12;
             }
