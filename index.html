@@ -140,21 +140,23 @@
                 </div>
                 <div class="controls">
                     <div class="forwardback">
-                        <div class="arrowDiv back" id="back"><span>&#8592;</span></div>
-                        <div class="arrowDiv forward" id="forward"><span>&#8594;</span></div>
+                        <div class="arrowDiv back noSelect" id="back"><span>&#8592;</span></div>
+                        <div class="arrowDiv forward noSelect" id="forward">
+                            <span>&#8594;</span>
+                        </div>
                     </div>
                     <div class="animation">
                         <div class="animationTop">
                             <div class="playDiv" id="play">
-                                <span class="playSpan">&#9654;</span>
+                                <span class="playSpan noSelect">&#9654;</span>
                             </div>
                             <div class="playDiv" id="stop">
-                                <span class="stopSpan">&#9632;</span>
+                                <span class="stopSpan noSelect">&#9632;</span>
                             </div>
                         </div>
                         <div class="animationBottom">
                             <div class="speedLeft">
-                                <span id="speedOutput">5x</span>
+                                <span id="speedOutput" class="noSelect"></span>
                             </div>
                             <div class="speedRight">
                                 <input
