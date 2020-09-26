@@ -1,4 +1,4 @@
-const recent = "2020092500";
+const recent = "2020092600";
 
 slider = document.getElementById("speedInput");
 output = document.getElementById("speedOutput");
