@@ -1,4 +1,5 @@
-const recent = "2020092800";
+// const recent = "2020092800";
+// getRecent();
 
 slider = document.getElementById("speedInput");
 output = document.getElementById("speedOutput");
@@ -184,11 +185,8 @@ function getUTC() {
 }
 
 async function getRecent() {
-    // url = "https://tools.airfire.org/websky/v1/api/runs/standard/GFS-0.15deg/";
-    // data = await get(url);
-    // return data["run_urls"][0];
-    var time = "2020091912";
-    return "https://haze.airfire.org/bluesky-daily/output/standard/GFS-0.15deg/" + time;
+    var json = await get("https://smokelook.herokuapp.com/");
+    return json.recent;
 }
 
 function sleep(ms) {
@@ -347,10 +345,8 @@ async function createOverlays(map, t) {
         west: -170.0,
     };
     var cont = true;
-    var base =
-        "https://haze.airfire.org/bluesky-daily/output/standard/GFS-0.15deg/" +
-        recent +
-        "/combined/graphics/three_hour/1GreyColorBar/three_hour_";
+    var recent = await getRecent();
+    var base = recent + "/combined/graphics/three_hour/1GreyColorBar/three_hour_";
     var url = "";
     var i = 0;
     while (i < 28) {
