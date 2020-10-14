@@ -346,6 +346,7 @@ async function createOverlays(map, t) {
     };
     var cont = true;
     var recent = await getRecent();
+    document.getElementById("loader").style.display = "none";
     var base = recent + "/combined/graphics/three_hour/1GreyColorBar/three_hour_";
     var url = "";
     var i = 0;
